@@ -1,0 +1,37 @@
+@import "../vendor/stylesheets/bootstrap.scss";
+
+.allh{
+	height: 100%;
+}
+
+html, body, header{
+	@extend .allh;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border:0px;
+}
+
+
+.v-center{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#header_area{
+	background: url('../../img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0%;
+	min-height: 500px;
+
+	.container{
+		height:80%;
+	}
+}
+
+h2,h3{
+	text-transform: uppercase;
+}

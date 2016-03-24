@@ -4,23 +4,55 @@
     <title>Agency-Theme</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=no-scalable">
-    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="assets/css/main.css" rel="stylesheet" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
   </head>
   <body>
     <header id="header_area">
-      <nav role="navigation" class="navbar navbar-default">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-inverse" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Project name</a>
+            <nav role="navigation" class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#dropdown_menu" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Project name</a>
+              </div>
+              <div id="dropdown_menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+      <div class="container v-center">
+        <div class="row v-center">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">Welcome to our studio!</h1>
+            <h1 class="text-center">It's nice to meet you </h1><a href="success.html" class="btn btn-default center-block btn-lg">Success</a>
+          </div>
         </div>
-        <div id="navbar-inverse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      </div>
     </header>
+    <section>
+      <div class="container">
+        <h2>Services</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur.</p>
+        <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="icon"></div><i class="fa fa-shopping-car"></i>
+                                <h1>Ecommerce</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex sequi adipisci, accusamus voluptates harum vel esse obcaecati quos quae amet!</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="icon"></div><i class="fa fa-laptop"></i>
+                                <h1>Responsive Design</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo explicabo veniam obcaecati id, deleniti. Dolore amet eveniet fugiat neque doloribus.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="icon"></div><i class="fa fa-lock"></i>
+                                <h1>Web Security</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam atque vero, unde ipsa, consequatur ipsum ducimus tenetur deserunt nam!</p>
+                    </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

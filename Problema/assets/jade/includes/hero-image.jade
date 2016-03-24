@@ -1,0 +1,13 @@
+header#header_area
+ include ../base/mixins/mixins.jade
+ +nav("Project name", "dropdown_menu")
+  +nav_item( "index.html", "active" ) Home
+  +nav_item( "about.html" ) About
+  +nav_item( "contact.html" ) Contact
+ div.container.v-center
+  div.row.v-center
+   div.col-md-12.col-sm-12.col-xs-12
+    h1.text-center Welcome to our studio!
+    h1.text-center It's nice to meet you 
+    include ../base/mixins/mixins.jade
+    +button("default center-block", "success.html", "large") Success
