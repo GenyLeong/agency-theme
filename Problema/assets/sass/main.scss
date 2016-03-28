@@ -13,11 +13,23 @@ html, body, header{
 	border:0px;
 }
 
-
-.v-center{
+.v-top{
 	display: flex;
 	justify-content:center;
+}
+
+.v-center{
+	@extend .v-top;
 	align-items:center;
+}
+
+@mixin margin($mt, $mr, $mb, $ml){
+	margin:{
+		top:$mt;
+		bottom:$mb;
+		right:$mr;
+		left:$ml;
+	}
 }
 
 #header_area{
@@ -34,4 +46,43 @@ html, body, header{
 
 h2,h3{
 	text-transform: uppercase;
+}
+
+.separador{
+	position:absolute;
+	left:50%;
+	width:2px;
+	transform: translateX(-50%);
+	-ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	height: auto;
+	background-color: #d5d4d4;
+	height:140rem;
+}
+
+.image-circle{
+	border-radius: 50%;
+	padding: 7px;
+	background-color: #d5d4d4;
+}
+
+.image-about{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.col-about{
+	@extend .v-center;
+	transform: translateX(-24rem);
+	margin-bottom:15%;
+}
+
+.text-box{
+	text-align:right;
+}
+
+.box-right{
+	@extend .v-center;
+	transform: translateX(135%);
 }

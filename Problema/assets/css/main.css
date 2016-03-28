@@ -5816,9 +5816,11 @@ button.close {
   background-color: transparent;
   border: 0px; }
 
-.v-center {
+.v-top, .v-center, .col-about, .box-right {
   display: flex;
-  justify-content: center;
+  justify-content: center; }
+
+.v-center, .col-about, .box-right {
   align-items: center; }
 
 #header_area {
@@ -5832,5 +5834,36 @@ button.close {
 
 h2, h3 {
   text-transform: uppercase; }
+
+.separador {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  height: auto;
+  background-color: #d5d4d4;
+  height: 140rem; }
+
+.image-circle {
+  border-radius: 50%;
+  padding: 7px;
+  background-color: #d5d4d4; }
+
+.image-about {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%; }
+
+.col-about {
+  transform: translateX(-24rem);
+  margin-bottom: 15%; }
+
+.text-box {
+  text-align: right; }
+
+.box-right {
+  transform: translateX(135%); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+section
+ .container
+  .row
+   h2 CONTACT US
+   p  Lorem ipsum dolor sit amet, consectetur adipisicing.
+   +form
+    +field('text', 'name', 'YOUR NAME*')(class="name help-block")
+    +field('email', 'email', 'YOUR EMAIL*')(class="email help-block")
+    +field('text', 'pass', 'YOUR PHONE*')(class="password help-block")
+   +form
+    textarea(class="form-control", rows="8", placeholder="YOUR MESSAGE*")
+  .v-center
+     input(type='submit', value='Sign Up')(class="submit")
+

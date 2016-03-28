@@ -32,8 +32,6 @@ mixin nav_header
  li.dropdown-header
   block
  
-//- End navbar mixins
-
 //- Button mixin
 mixin button(style, href, size)
  - var style = (typeof style === 'undefined') ? "default" : style
@@ -50,15 +48,68 @@ mixin button(style, href, size)
         block
 
 //- Declaration cols
-mixin list
+mixin col-4
  div.col-md-4.col-sm-4.col-xs-12
-  div.icon
-  block
-    
+   block
+
+mixin list(title, parrafo)
+ div.col-md-4.col-sm-4.col-xs-12
+  div.icon 
+   block
+  +article(title, parrafo)
+   
 mixin link(name)
  i(class!=attributes.class)= name
-  
+
 mixin article(title, parrafo)
- h1= title
+ h3= title
  p=parrafo
 
+//- card
+mixin col-3
+ div.col-md-3.col-sm-3.col-xs-12
+  div.card 
+   block
+
+mixin image(src)
+ img(class!=attributes.class, src=src)
+ 
+mixin h4(title, parrafo)
+ h4= title
+ p=parrafo
+ 
+//- our amazing team
+
+- var loremipsum =" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum, id. Hic quisquam similique atque. Alias atque accusantium perspiciatis, totam?"
+
+mixin images-team(amazing)
+ case amazing
+  when 'team1'
+   img.team-group(src="img/team/1.jpg")
+  when 'team2'
+   img.team-group(src="img/team/2.jpg")
+  when 'team3'
+   img.team-group(src="img/team/3.jpg")
+
+mixin networks()
+ .networks
+  a(href="#").social-circle.fa.fa-twitter
+  a(href="#").social-circle.fa.fa-facebook
+  a(href="#").social-circle.fa.fa-linkedin
+
+mixin team(amazing, teamtitle, teamparrafo)
+ .col-sm-4
+  +images-team(amazing)
+  h3=teamtitle
+  span.teamparrafo= teamparrafo  
+  +networks()
+
+//-forms
+mixin form
+ div.col-md-6.col-sm-6.col-xs-12
+  form(role="form")
+   .form-group
+    block
+
+mixin field(type, name, placeholder)
+ input(type=type, name=name, placeholder=placeholder, class!=attributes.class)
